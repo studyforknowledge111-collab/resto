@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<h2>Edit Order</h2>
+
+<form method="post">
+
+Food:
+<input type="text" name="food" value="{{order[2]}}">
+
+Qty:
+<input type="number" name="qty" value="{{order[3]}}">
+
+<button type="submit">Update</button>
+
+</form>

@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<h2>🍽️ Table {{table}} Menu</h2>
+
+<form action="/order" method="post">
+
+<input type="hidden" name="table" value="{{table}}">
+
+<select name="food">
+<option>Burger</option>
+<option>Pizza</option>
+<option>Pasta</option>
+<option>Sandwich</option>
+<option>French Fries</option>
+<option>Cold Coffee</option>
+<option>Veg Thali</option>
+<option>Paneer Butter Masala</option>
+</select>
+
+<input type="number" name="qty" placeholder="Quantity">
+
+<button type="submit">Place Order 🛒</button>
+
+</form>
